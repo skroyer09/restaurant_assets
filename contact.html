@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Restaurant KEA</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" title="Home Page">Home</a>
+            </li>
+            <li>
+                <a href="food.html" title="Food Menu">Menu</a>
+            </li>
+            <li>
+                <a href="contact.html" title="Contact KEA Restaurant">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+        <p>Guldbergsgade 29N 2200 Copenhagen</p>
+        <p>Phone no.: <a href="tel:+ 20 82 53 70"> 20 82 53 70</a></p>
+        <p>E-mail: <a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a></p>
+        </section>
+
+        <section>
+            <img src="/img/map.jpg" alt="A map showing KEA">
+        </section>
+
+        
+       <form class="comment_information">
+            <fieldset>
+                <legend>Comment Information</legend>
+                <section>
+                <label for="FullName"> Full Name</label>  
+                <input type="text" id="FullName" name="name_full" required>
+                </section>
+
+                <section>
+                <label for="Phone">phone no.</label>
+                <input type="tel" id="Phone" name="phone" required>
+                </section>
+
+                <section>
+                <label for="E-mail">E-mail</label>
+                <input type="email" id="E-mail" name="email" required>
+                </section>
+
+                <section>
+                <label for="Person">Person</label>
+                <input type="number" id="Person" name="person" value="2"  required min="1" max="10">
+                </section>
+
+                <section>
+                <label for="DateTime">Date and Time</label>
+                <input type="datetime-local" id="DateTime" name="date_and_time" required>
+                </section>
+
+                <section>
+                <label for="Information">Further information</label><br>
+                <textarea name="further_information" id="Information"></textarea>
+                </section>
+                <input type="submit" value="send">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 KEA Development</p>
+    </footer>
+    
+</body>
+</html>
