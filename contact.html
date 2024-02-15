@@ -26,12 +26,11 @@
 
     <main>
         <section>
+        <address>
         <p>Guldbergsgade 29N 2200 Copenhagen</p>
         <p>Phone no.: <a href="tel:+ 20 82 53 70"> 20 82 53 70</a></p>
         <p>E-mail: <a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a></p>
-        </section>
-
-        <section>
+        </address>
             <img src="/img/map.jpg" alt="A map showing KEA">
         </section>
 
@@ -40,13 +39,13 @@
             <fieldset>
                 <legend>Comment Information</legend>
                 <section>
-                <label for="FullName"> Full Name</label>  
-                <input type="text" id="FullName" name="name_full" required>
+                <label for="txtFullName"> Full Name</label>  
+                <input type="text" id="txtFullName" name="name_full" required pattern="([A-Za-z]+ )+[A-Za-z]+">
                 </section>
 
                 <section>
-                <label for="Phone">phone no.</label>
-                <input type="tel" id="Phone" name="phone" required>
+                <label for="txtPhone">Phone no.</label>
+                <input type="tel" id="Phone" name="txtPhone" required pattern="[0-9]{8}">
                 </section>
 
                 <section>
