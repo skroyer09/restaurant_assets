@@ -1,9 +1,53 @@
-@import "styles.css";
+@import 'styles.css';
+
+main  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1f 1fr;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    max-height: 600px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+form, address {
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-style: normal;
+
+}
 
 fieldset {
-    padding: 1rem 0;
-    border: none;
-    border-top: thin solid var(--colorBgSecondary);
+    padding: 0.5rem;
+    border: thin solid var(--colorBgSecondary);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset > div {
+    padding: 0.3rem;
+    display: flex;
+}
+
+#form_information {
+    flex-direction: column;
 }
 
 legend {
@@ -11,23 +55,42 @@ legend {
     padding: 0 0.5rem;
 }
 
-form, address {
-    margin: 1rem;
-}
-
 label {
     display: inline-block;
     width: 8rem;
 }
 
+input {
+    width: 100%;
+}
+
 input[type=submit] {
-    padding: 0.25rem 1rem;
+    margin: 1rem;
+    width: auto;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
     border-radius: 1rem;
-    border: thin solid var(--colorBgSecondary);
-    color: var(--colorSecondary);
+    color: var(--colorText);
     background-color: var(--colorBgSecondary);
+    border: none;
 }
 
 textarea {
-    width: 80%;
+    width: 100%;
+}
+
+
+@media (max-width: 425px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    main > section:nth-child(2) {
+        grid-row: 1;
+    }
+
+    main > section:nth-child(1) {
+        grid-row: 2;
+    }
 }

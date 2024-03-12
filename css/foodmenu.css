@@ -1,0 +1,58 @@
+@import 'styles.css';
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+article {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 45%;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid var(--colorMenu);
+    background-color: var(--colorMenu);
+    border-radius: 1rem;
+    height: auto;
+    gap: 1rem;
+}
+
+article > * {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+article img {
+    width: clamp(200px, 100%, 400px);
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.menu_price{
+    width: auto;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: right;
+    margin: 0.5rem 0;
+    padding: 0.25rem 1rem;
+    color: var(--colorText);
+    background-color: var(--colorPrice);
+    border: 5px solid var(--colorBgSecondary);
+    border-radius: 0.5rem;
+    align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+    article {
+        flex: 1 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    article {
+        flex-direction: column-reverse;
+    }
+}

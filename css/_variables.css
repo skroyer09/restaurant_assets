@@ -1,9 +1,11 @@
 :root {
-    --colorSecondary: floralwhite;
+    --colorText: floralwhite;
     --colorBgSecondary: #27354A;
-    --colorHeader: #EA5047;
-    --colorPrice: red; 
-    --colorKage: #D3D3D3; 
+    --colorPrice: #F24B4B; 
+    --colorQuote: #D3D3D3;
+    --colorHightlight: #EBCE9A; 
+    --colorHightlight2: #EA5047;
+    --colorMenu: #FAFAD2; 
 
     --fontDefault: Verdana, Arial, sans-serif;
     --fontHighlight: 'Book Antiqua', serif;

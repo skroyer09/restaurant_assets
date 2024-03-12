@@ -11,11 +11,16 @@ body {
 
 header{
     font-family: var(--fontHighlight);
-    color: var(--colorSecondary);
+    color: var(--colorText);
 }
 
+ h1 a {
+    color: inherit; 
+    text-decoration: none; 
+ }
+
 header {
-    background-color: var(--colorHeader);
+    background-color: var(--colorHightlight2);
     padding: 0.5rem 2rem;
 }
 
@@ -23,22 +28,10 @@ main {
     margin-bottom: 2rem;
 }
 
-/* footer {
-    background-color: var(--colorBgSecondary);
-    padding: 0.1rem;
-    text-align: center;
-}
-@media (min-width: 768px) {
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-} */
 
 nav {
     padding: 0.25rem 2rem;
-   
+    
     border-bottom: solid 0.2rem var(--colorBgSecondary);
     position: sticky;
     top: 0;
@@ -57,10 +50,11 @@ nav li {
 }
 
 nav li > a {
-    color: var(--colorSecondary);
+    color: var(--colorText);
 }
 nav li > a:hover {
-    text-decoration: underline overline;
+    text-decoration: none;
+    color: var(--colorHightlight);
 }
 
 section, article {
@@ -69,8 +63,23 @@ section, article {
 
 a {
     text-decoration: none;
-    color: var(--colorSecondary);
 }
 a:hover {
     text-decoration: underline;
+    color: var(--colorHightlight);
 }
+
+footer {
+    background-color: var(--colorBgSecondary);
+    padding: 0.4rem;
+    text-align: center;
+    color: var(--colorText);
+}
+
+@media (min-width: 768px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+} 
