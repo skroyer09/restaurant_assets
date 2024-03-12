@@ -1,0 +1,33 @@
+@import "styles.css";
+
+fieldset {
+    padding: 1rem 0;
+    border: none;
+    border-top: thin solid var(--colorBgSecondary);
+}
+
+legend {
+    margin-left: 1rem;
+    padding: 0 0.5rem;
+}
+
+form, address {
+    margin: 1rem;
+}
+
+label {
+    display: inline-block;
+    width: 8rem;
+}
+
+input[type=submit] {
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+    border: thin solid var(--colorBgSecondary);
+    color: var(--colorSecondary);
+    background-color: var(--colorBgSecondary);
+}
+
+textarea {
+    width: 80%;
+}

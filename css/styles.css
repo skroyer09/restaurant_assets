@@ -1,0 +1,76 @@
+@import '_variables.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fontDefault);
+}
+
+header{
+    font-family: var(--fontHighlight);
+    color: var(--colorSecondary);
+}
+
+header {
+    background-color: var(--colorHeader);
+    padding: 0.5rem 2rem;
+}
+
+main {
+    margin-bottom: 2rem;
+}
+
+/* footer {
+    background-color: var(--colorBgSecondary);
+    padding: 0.1rem;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+} */
+
+nav {
+    padding: 0.25rem 2rem;
+   
+    border-bottom: solid 0.2rem var(--colorBgSecondary);
+    position: sticky;
+    top: 0;
+    background-color: var(--colorBgSecondary);
+}
+
+nav li {
+    display: block;
+    margin-right: 1rem;
+    text-align: center;
+}
+@media (min-width: 450px) {
+    nav li {
+        display: inline-block;
+    }
+}
+
+nav li > a {
+    color: var(--colorSecondary);
+}
+nav li > a:hover {
+    text-decoration: underline overline;
+}
+
+section, article {
+    margin: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorSecondary);
+}
+a:hover {
+    text-decoration: underline;
+}
